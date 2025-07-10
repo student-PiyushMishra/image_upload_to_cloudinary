@@ -30,4 +30,4 @@ app.post("/upload", upload.single("image"), async (req, res) => {
   }
 });
 
-app.listen(3000,()=>console.log("Listening at 3000"));
+app.listen(process.env.PORT,()=>console.log("Listening..."));
